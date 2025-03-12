@@ -66,6 +66,8 @@ def get_latest_bitcoin_price():
         return None
 
 if __name__ == "__main__":
-    price = get_latest_bitcoin_price()
-    if price:
-        print(f"Le dernier prix du Bitcoin est : {price} USDT")
+    while(True):
+        price = get_latest_bitcoin_price()
+        if price:
+            print(f"Le dernier prix du Bitcoin est : {price} USDT")
+            process_realtime_data(price)
