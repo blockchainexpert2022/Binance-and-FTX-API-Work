@@ -70,4 +70,4 @@ if __name__ == "__main__":
         price = get_latest_bitcoin_price()
         if price:
             print(f"Le dernier prix du Bitcoin est : {price} USDT")
-            process_realtime_data(price)
+            print("Predicted = " + str(process_realtime_data(price)))
